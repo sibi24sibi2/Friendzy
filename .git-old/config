@@ -1,0 +1,69 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/sibi24sibi/linkedIn-Clone-app.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "signin-component"]
+	vscode-merge-base = origin/main
+[branch "demo-branch"]
+	remote = origin
+	merge = refs/heads/demo-branch
+[branch "feat/linkedin-post"]
+	remote = origin
+	merge = refs/heads/feat/linkedin-post
+[branch "demo2"]
+	vscode-merge-base = origin/feat/linkedin-post
+[branch "Footer"]
+	remote = origin
+	merge = refs/heads/Footer
+[branch "feat/connect-model"]
+	remote = origin
+	merge = refs/heads/feat/connect-model
+[branch "ProfileSection"]
+	remote = origin
+	merge = refs/heads/ProfileSection
+[branch "loading"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/loading
+[branch "Connect-model"]
+	remote = origin
+	merge = refs/heads/Connect-model
+[branch "header"]
+	remote = origin
+	merge = refs/heads/header
+[branch "JobDetail"]
+	remote = origin
+	merge = refs/heads/JobDetail
+[branch "signin-compo"]
+	vscode-merge-base = origin/main
+[branch "signin-compo-2"]
+	vscode-merge-base = origin/main
+[branch "EditProfileSection"]
+	vscode-merge-base = origin/main
+[branch "JobSection"]
+	remote = origin
+	merge = refs/heads/JobSection
+[branch "new-branch-upload-post"]
+	remote = origin
+	merge = refs/heads/new-branch-upload-post
+	vscode-merge-base = origin/new-branch-Upload-Post
+[branch "new-branch-UploadPost"]
+	remote = origin
+	merge = refs/heads/new-branch-UploadPost
+	vscode-merge-base = origin/new-branch-UploadPost
+[branch "new-deploy"]
+	remote = origin
+	merge = refs/heads/new-deploy
+	vscode-merge-base = origin/new-deploy
+[branch "version-2"]
+	github-pr-base-branch = "sibi24sibi#linkedIn-Clone-app#main"
+	vscode-merge-base = origin/main

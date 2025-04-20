@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-custom-class {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem; /* 8px, equivalent to Tailwind's rounded-lg */
+}
+
+.skeleton-circle {
+
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  margin-right: 16px;
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(to right, #e0e0e0 8%, #f4f4f4 25%, #e0e0e0 50%);
+  background-size: 200% 100%;
+}
+
+
+
+@keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
