@@ -31,8 +31,10 @@ export const AuthProvider = ({ children }) => {
   const auth = getAuth(app);
   const navigate = useNavigate();
 
-  const randomNum = Math.floor(Math.random() * 49) + 1;
-  const generateRandomProfilePic = `https://avatar.iran.liara.run/public/${randomNum}`;
+
+
+
+  console.log(userData)
 
   const setUserOnlineStatus = (userId) => {
     const userStatusRef = ref(database, `users/${userId}/status`);
@@ -103,7 +105,7 @@ export const AuthProvider = ({ children }) => {
         email: email,
         userID: user.uid,
         username: `user${crypto.randomUUID().slice(0, 8)}`,
-        profilePic: generateRandomProfilePic || "defaultProfile",
+        profilePic: `https://ui-avatars.com/api/?name=${encodeURIComponent(displayName)}&length=1&background=random`
       });
 
       // Fetch the user document to set userData immediately
@@ -132,7 +134,7 @@ export const AuthProvider = ({ children }) => {
           name: user.displayName || "Unknown User",
           email: user.email,
           userID: user.uid,
-          profilePic: generateRandomProfilePic,
+          profilePic: `https://ui-avatars.com/api/?name=${encodeURIComponent(user.displayName)}&length=1&background=random`,
         });
       }
 
